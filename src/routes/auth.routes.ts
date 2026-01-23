@@ -44,7 +44,7 @@ router.post('/login', async (req, res) => {
         maxAge: 60 * 60 * 1000
     });
 
-    res.json({ message: 'Logged in' });
+    res.json(user);
 });
 
 router.post('/logout', (req, res) => {
