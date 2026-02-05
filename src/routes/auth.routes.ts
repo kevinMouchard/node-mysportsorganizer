@@ -11,7 +11,6 @@ router.use(cookieParser());
 
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
-    console.log(req.body, ' yeahhh');
 
     // 1. Find user in DB
     const user = await getUserByEmail(email);

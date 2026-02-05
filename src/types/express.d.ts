@@ -3,7 +3,7 @@ import * as express from 'express';
 declare global {
     namespace Express {
         interface Request {
-            user?: { id: number; email: string }; // whatever your JWT payload contains
+            user?: { id: number; email: string };
         }
     }
 }
