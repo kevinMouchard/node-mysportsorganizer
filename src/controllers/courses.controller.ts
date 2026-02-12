@@ -41,11 +41,12 @@ export async function addCourse(req: Request, res: Response) {
             DISTANCE: req.body.DISTANCE,
             DENIVELE: req.body.DENIVELE,
             NOM_COURSE: req.body.NOM_COURSE,
-            DATE:req.body.DATE,
+            DATE: req.body.DATE,
             TIME: req.body.TIME,
             FINISHED: req.body.FINISHED,
             SPORT_ID: req.body.SPORT_ID,
             USER_ID: userId,
+            GPX_FILE: req.body.GPX_FILE,
         };
         res.json(courseAdded);
     } catch (err) {

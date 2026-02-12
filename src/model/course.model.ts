@@ -9,4 +9,5 @@ export interface Course {
     FINISHED: boolean;
     SPORT_ID: number;
     USER_ID: number;
+    GPX_FILE: string;
 }
